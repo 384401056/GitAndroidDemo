@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+每一个Node就是APP要调用的API接口信息，一个Node对应着一个URLData实体.
+Expires是用来做数据缓存的。
+-->
+
+<url>
+    <Node
+        Key="getWeatherInfo"
+        Expires="300"
+        NetType="get"
+        Url="http://www.weather.com.cn/data/sk/101010100.html" />
+
+    <Node
+        Key="login"
+        Expires="0"
+        NetType="post"
+        Url="http://www.weather.com.cn/data/login.api" />
+</url>
+
